@@ -9,7 +9,7 @@ var index_file = fs.readFile('./index.html', 'utf8', function (err, data) {
 });
 
 app.get('/', function(request, response) {
-  response.send(index_file);
+  response.send(fs.readFileSync('./index.html', 'utf8'));
 });
 
 var port = process.env.PORT || 5000;
