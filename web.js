@@ -3,13 +3,13 @@ var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
-var index_file = fs.readFile('/etc/passwd', function (err, data) {
+var index_file = fs.readFile('./index.html', function (err, data) {
   if (err) throw err;
   console.log(data);
 });
 
 app.get('/', function(request, response) {
-  response.send('index_file');
+  response.send(index_file);
 });
 
 var port = process.env.PORT || 5000;
