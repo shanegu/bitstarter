@@ -97,6 +97,11 @@
 			.footer a {
 				color: #ccccff;
 			}
+			/* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+			div.addthis_toolbox {
+				width:180px;
+				margin: 0 auto;
+			}
 		</style>
 	</head>
 
@@ -137,7 +142,7 @@
 			<div class="row-fluid subheading">
 				<div class="span12">
 					<p class="lead">Too high auto insurance price?! Name your own price,
-													insurance companies will compete to match your offers.</p>
+					insurance companies will compete to match your offers.</p>
 				</div>
 			</div>
 			<div class="row-fluid pitch">
@@ -146,40 +151,55 @@
 				</div>	
 
 				<div class="span5 actions">
-					<div class="span8 offset2">
-						<div class="statistics">
-							<div class="span4">
-								<div class="linediv-l">
-									<h3>1000</h3> <p>backers</p>
+					<div class="row-fluid">	
+						<div class="span8 offset2">
+
+							<div class="row-fluid statistics">
+								<div class="span4">
+									<div class="linediv-l">
+										<h3>1000</h3> <p>backers</p>
+									</div>
 								</div>
-							</div>
-							<div class="span4">
-								<div class="linediv-c">
-									<h3>$2500</h3> <p>of $500,000</p>
+								<div class="span4">
+									<div class="linediv-c">
+										<h3>$2500</h3> <p>of $500,000</p>
+									</div>
 								</div>
-							</div>
-							<div class="span4">
-								<div class="linediv-r">
-									<h3>60</h3> <p>days left</p>
+								<div class="span4">
+									<div class="linediv-r">
+										<h3>60</h3> <p>days left</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="span10 offset1">
 
-						<div class="thermometer progress active">
-							<div class="bar bar-success" style="width: 0.5%;"></div>
-							<div class="bar bar-warning" style="width: 99.5%;"></div>
-						</div>	
-					</div>	
-					<div class="span6 offset3 order">	
-						<button class="btn btn-success btn-large">Preorder</button>
+						<div class="row-fluid">
+							<div class="span10 offset1">
+								<!-- Bootstrap progress bar -->
+								<!-- http://twiter.github.io/bootstrap/components.html#progress -->
+								<div class="thermometer progress active">
+									<div class="bar bar-sucess" style="width: 60%;"></div>
+									<div class="bar bar-warning" style="width: 40%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span6 offset3 order">
+								<!-- Standard Bootstrap button. -->
+								<!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+								<button class="btn btn-success btn-large">Preorder</button>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span8 offset2 social">
+								<!-- Social buttons are not included in default Bootstrap. -->
+								<!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+								<button class="btn btn-twitter"><i class="icon-twitter"></i> Twitter</button>
+								<button class="btn btn-facebook"><i class="icon-facebook"></i> Facebook</button>
+							</div>
+						</div>
 					</div>
-					<div class="span8 offset2 social">
-						<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-						<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-					</div>
-				</div>
+				</div>		
 			</div>	
 
 			<div class="row-fluid section1">
